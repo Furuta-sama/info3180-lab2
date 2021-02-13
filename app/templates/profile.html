@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section id=green>
+    <img src="{{url_for('static', filename='342rdhgd.jpg')}}" alt="">
+    <h1>Tadave Brown</h1></br>
+    <p>@thirteenthking</br>Portmore, Jamaica</br>Joined {% for item in items %} {{ item }} {% endfor %} </p>
+</section>
+<section id=clear>
+    <p>I am a smart, talented young man who loves website design and development. Contact me if you'd like to work together on a new project.</p>
+    <div id=info>
+        <h2>7 2 20k</h2></br>
+        <p>Posts Followers Following</p>
+    </div>
+    <button type="submit" class="btn">Follow</button>
+</section>
+{% endblock %}
